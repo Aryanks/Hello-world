@@ -11,4 +11,4 @@ jobs:
 
       - run: npm install
  
-      - run: npm hello.js
+      - run: npm main.js
