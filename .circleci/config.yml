@@ -11,6 +11,9 @@ jobs:
         # - run:
         #  name: install-dependencies
       
-      - run: npm install
+      - run:
+         command: npm install
+        
       
-      - run: npm main
+      - run:
+          command: npm main
