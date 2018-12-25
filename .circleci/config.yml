@@ -16,4 +16,4 @@ jobs:
         
       
       - run:
-          command: npm main.js
+          command: node main.js
