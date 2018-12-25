@@ -8,8 +8,9 @@ jobs:
 
     steps:
       - checkout
-      - run:
-           name: install-dependencies
+        # - run:
+        #  name: install-dependencies
+      
       - run: npm install
       
       - run: npm main
