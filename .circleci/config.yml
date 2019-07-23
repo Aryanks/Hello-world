@@ -8,6 +8,6 @@ version: 2
     steps:
       - checkout
       - run: <command>
-      mkdir test
+      
 workflows:
   
