@@ -1,17 +1,20 @@
 version: 2
 jobs:
- test:
-   machine: true
-   steps:
-   run:
-   mkdir test 
-      
-   
-   
-   
-   
-   
-   workflows:
- version: 2
- rolling_update:
-   jobs:
+  build:
+    docker:
+      - image: circleci/<language>:<version TAG>
+    steps:
+      - checkout
+      - run: <command>
+  test:
+    docker:
+      - image: circleci/<language>:<version TAG>
+    steps:
+      - checkout
+      - run: <command>
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
+      - test
