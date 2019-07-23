@@ -1,5 +1,5 @@
-- run:
-    command: |
-      echo Running test
-      mkdir -p /tmp/test-results
-      make test .
+version: 2
+jobs:
+ test:
+   machine: true
+   steps:
