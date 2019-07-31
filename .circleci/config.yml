@@ -9,7 +9,7 @@ jobs:
     
   workflows:
    version: 2
-    rolling_update:
+     #rolling_update:
       jobs:
     - my_ci_and_cd:
         filters:
