@@ -1,8 +1,8 @@
 version: 2
 jobs:
-  build:
-    docker:
-      - image: circleci/ruby:2.4.1
+  my_ci_and_cd:
+    machine: true
     steps:
-      - checkout
-      - run: echo "Hello aryan you have new leran"
+    - run: |
+        sudo apt update && sudo apt install sshpass -y
+    - run: "sshpass -p $spineor ssh spineor@192.168.0.101 'ls -ltr' \n"
