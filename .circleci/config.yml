@@ -7,10 +7,10 @@ jobs:
         sudo apt update && sudo apt install sshpass -y
     - run: "sshpass -p $spineor ssh spineor@192.168.0.101 'ls -ltr' \n"
     
- workflows:
-  version: 2
-  rolling_update:
-    jobs:
+  workflows:
+   version: 2
+    rolling_update:
+      jobs:
     - my_ci_and_cd:
         filters:
           branches:
